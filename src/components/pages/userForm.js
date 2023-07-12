@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "../styles/styles.css";
 
 function UserForm() {
@@ -52,6 +53,7 @@ function UserForm() {
         <button type="submit">Enregistrer</button>
       </form>
       {message && <p>{message}</p>}
+      <Link to="">Aller à la page listUsers</Link>  
     </div>
   );
 }
